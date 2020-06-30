@@ -37,16 +37,6 @@ class MemeGenerator extends Component {
             this.setState({allMemeImgs: memes})
         })
     }
-     /**
-     * We'll be using an API that provides a bunch of meme images.
-     * 
-     * Your task:
-     * make an API call to "https://api.imgflip.com/get_memes" and save the 
-     * data that comes back (`response.data.memes`) to a new state property
-     * called `allMemeImgs`. (The data that comes back is an array)
-     */
-    
-
 
     render() {
         return (
@@ -68,13 +58,7 @@ class MemeGenerator extends Component {
                 value={this.state.bottomText} 
                 onChange={this.handleChange}
                 />
-                {
-                    /**
-                     * Create 2 input fields, one for the topText and one for the bottomText
-                     * Remember that these will be "controlled forms", so make sure to add
-                     * all the attributes you'll need for that to work
-                     */
-                }    
+                  
             
                 <button onClick={this.genClicked}>Gen</button>
             </form>
